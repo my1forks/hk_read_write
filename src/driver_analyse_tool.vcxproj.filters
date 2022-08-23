@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Source Files\user">
+      <UniqueIdentifier>{40cb8e03-3eff-4aed-81a2-150195a0360f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\special_system">
+      <UniqueIdentifier>{a1bc82e3-9e02-4d25-8f1a-2e344bd788b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="driver_analyse_tool.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>Source Files\user</Filter>
+    </ClCompile>
+    <ClCompile Include="module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\kernel-hook\khook\hk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\kernel-hook\khook\hde\hde32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dependencies\kernel-hook\khook\hde\hde64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exclusivity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hook_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="us_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="slist.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="module.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util_stru.hh">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pe.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exclusivity.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hook_helper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="us_util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="special_system\special_system.h">
+      <Filter>Source Files\special_system</Filter>
+    </ClInclude>
+    <ClInclude Include="special_system\wrap_call.h">
+      <Filter>Source Files\special_system</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
